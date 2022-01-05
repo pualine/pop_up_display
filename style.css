@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(231, 238, 237);
+}
+.flexD {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2, 2, 114);
+}
+.flexD .create,
+.create3D {
+  margin: 1rem;
+}
+
+.flexD .create,
+.create3D h1 {
+  padding-top: 2rem;
+  color: #ffff;
+}
+.create {
+  background-color: coral;
+  text-align: center;
+  width: 20%;
+  height: 30vh;
+}
+.create3D {
+  background-color: crimson;
+  text-align: center;
+  width: 22%;
+  height: 35vh;
+  transform: translate3d(10px, 90px, 30px);
+  transform: scale(-1.5);
+  transform: rotate(30deg);
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transform: scale(1);
+  transition: 0.3s;
+  background-color: rgb(202, 223, 233);
+}
+
+.popup__content {
+  position: absolute;
+  top: 17rem;
+  left: 50%;
+  width: 35%;
+  height: 75vh;
+  transform: translate(-50%, -50%);
+  padding: 1.4rem;
+  background-color: rgb(200, 212, 224);
+  border-radius: 50%;
+  opacity: 0.9;
+  box-shadow: rgba(66, 68, 70, 0.3) 0.5px 1px 2px 0.5px,
+    rgba(70, 73, 75, 0.15) 0.5px 1px 3px 1px;
+}
+
+.close__popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  left: 18rem;
+  margin: 0 auto;
+  width: 10%;
+  height: 8vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 83, 0.534);
+}
+.close__popup svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: #ffff;
+}
+
+.content__container {
+  position: relative;
+  top: 2.3rem;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.content__container h1 {
+  font-size: 3.5rem;
+  margin-top: -0.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.content__container span {
+  color: coral;
+  text-shadow: 2px 2px 1px rgba(66, 68, 70, 0.3);
+}
+.content__container p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 2.8rem;
+  width: 80%;
+}
+.emilInput {
+  position: relative;
+  left: 6rem;
+  display: block;
+  padding: 1rem 0.5rem;
+  width: 55%;
+  border-radius: 3rem;
+  background-color: rgb(231, 230, 230);
+  border: 1px solid rgb(204, 204, 204);
+  text-indent: 1rem;
+  color: rgb(124, 124, 124);
+}
+.emilInput:focus {
+  outline: none;
+}
+.form a {
+  position: relative;
+  left: 8rem;
+  top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  width: 70%;
+  background-color: dodgerblue;
+  color: #ffff;
+  border-radius: 3rem;
+}
+.form a:link,
+.form a:visited {
+  background-color: rgb(15, 130, 245);
+}
+.hide___popup {
+  transform: scale(0.2);
+  opacity: 0;
+  visibility: hidden;
+}
